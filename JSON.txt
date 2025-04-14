@@ -1,0 +1,30 @@
+http://localhost:8093/api/JobApplication/2/status 
+{
+    "statut": "EN_ATTENTE"
+}
+=> mailing 
+http://localhost:8093/api/JobApplication/createJobApplication
+{
+  
+  "user": {
+    "id": 101,
+    "nom": "Doe",
+    "prenom": "John",
+    "email": "john.doe@example.com",
+    "role": "CANDIDAT"
+  },
+  "jobOffer": {
+    "id": 55,
+    "titre": "Développeur Full Stack",
+    "description": "Développement d'applications web avec Spring Boot et Angular",
+    "datePublication": "2025-04-01"
+  },
+  "statut": "NOUVELLE",
+  "dateCandidature": "2025-04-08T15:23:00",
+  "cvPath": "/files/cv/john_doe.pdf",
+  "LettreMotivationPath": "/files/motivation/john_doe_lm.pdf",
+  "version": 1,
+  "email": "john.doe@example.com",
+  "isPinned": false
+}
+=> ajouter JobApplication
